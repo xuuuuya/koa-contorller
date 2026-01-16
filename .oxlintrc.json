@@ -1,0 +1,68 @@
+{
+  "plugins": [
+    "typescript"
+  ],
+  "rules": {
+    "no-var": "error",
+    "no-void": "error",
+    "radix": "error",
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "no-restricted-globals": [
+      "error",
+      "isFinite",
+      "isNaN"
+    ],
+    "no-return-assign": "error",
+    "curly": "off",
+    "new-cap": "off",
+    "prefer-rest-params": "error",
+    "max-params": [
+      "error",
+      3
+    ],
+    "max-nested-callbacks": [
+      "error",
+      3
+    ],
+    "no-else-return": "error",
+    "max-depth": [
+      "error",
+      5
+    ],
+    "max-lines": [
+      "error",
+      500
+    ],
+    "prefer-object-spread": "error",
+    "prefer-object-has-own": "error",
+    "typescript/no-require-imports": "error",
+    "typescript/no-non-null-asserted-nullish-coalescing": "error",
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
+    "typescript/no-inferrable-types": "error",
+    "typescript/prefer-for-of": "error",
+    "typescript/prefer-function-type": "error",
+    "typescript/prefer-namespace-keyword": "error"
+  },
+  "globals": {
+    "REACT_APP_ENV": "readonly",
+    "definePageConfig": "readonly",
+    "defineAppConfig": "readonly"
+  },
+  "ignorePatterns": [
+    "tools/**/*.js",
+    "scripts/*"
+  ],
+  "env": {
+    "node": true
+  }
+}

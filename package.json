@@ -1,0 +1,56 @@
+{
+  "name": "koa-di-router",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "authors": [
+    {
+      "name": "xuuuuya",
+      "email": "xuuuuya@163.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuuuuya/koa-contorller.git"
+  },
+  "description": "基于 Koa + TypeScript 原生实现的依赖注入 + 路由参数控制器",
+  "keywords": [
+    "koa",
+    "typescript",
+    "dependency injection",
+    "di",
+    "router",
+    "controller"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "dev": "npx ts-node tests/index.ts",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "oxlint src/**/*.ts"
+  },
+  "files": [
+    "lib/**"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@koa/router": "15.1.1",
+    "koa": "^3.1.1",
+    "koa-bodyparser": "4.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "@types/koa": "3.0.1",
+    "@types/koa__router": "12.0.5",
+    "@types/koa-bodyparser": "4.3.13",
+    "@types/node": "25.0.3",
+    "@types/reflect-metadata": "^0.0.5",
+    "jest": "30.2.0",
+    "oxlint": "1.35.0",
+    "prettier": "3.7.4",
+    "reflect-metadata": "^0.2.2",
+    "ts-jest": "29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

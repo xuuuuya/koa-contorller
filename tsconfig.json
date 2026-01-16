@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "declaration": true,
+    "baseUrl": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    // 启用装饰器
+    "emitDecoratorMetadata": true,
+    // 启用装饰器元数据反射
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es6"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/*"
+  ]
+}
