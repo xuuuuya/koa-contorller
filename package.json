@@ -1,5 +1,6 @@
 {
-  "name": "koa-di-router",
+  "name": "koa-contorller",
+  "description": "基于 Koa koa/router + TypeScript 原生实现的依赖注入 + 路由参数控制器",
   "version": "0.0.1",
   "type": "commonjs",
   "authors": [
@@ -8,11 +9,20 @@
       "email": "xuuuuya@163.com"
     }
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/xuuuuya/koa-contorller.git"
   },
-  "description": "基于 Koa + TypeScript 原生实现的依赖注入 + 路由参数控制器",
   "keywords": [
     "koa",
     "typescript",
@@ -21,7 +31,6 @@
     "router",
     "controller"
   ],
-  "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "dev": "npx ts-node tests/index.ts",

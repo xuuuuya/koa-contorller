@@ -1,0 +1,21 @@
+# 忽略源文件和配置文件
+src/
+tsconfig.json
+tsconfig.*.json
+
+# 忽略测试文件
+tests/
+*.test.*
+*.spec.*
+
+# 忽略开发文件
+.vscode/
+.idea/
+.zed/
+.eslintrc.js
+.prettierrc
+.oxlintrc.json
+jestconfig.json
+# 其他
+*.log
+.env
