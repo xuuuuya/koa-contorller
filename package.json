@@ -19,9 +19,14 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/xuuuuya/koa-contorller/",
   "repository": {
     "type": "git",
     "url": "https://github.com/xuuuuya/koa-contorller.git"
+  },
+  "bugs": {
+    "email": "xuuuuya@163.com",
+    "url": "https://github.com/xuuuuya/koa-contorller/issues"
   },
   "keywords": [
     "koa",
