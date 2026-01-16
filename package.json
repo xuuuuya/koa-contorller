@@ -39,7 +39,7 @@
     "lint": "oxlint src/**/*.ts"
   },
   "files": [
-    "lib/**"
+    "dist/**"
   ],
   "license": "MIT",
   "dependencies": {
