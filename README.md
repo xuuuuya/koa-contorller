@@ -40,7 +40,7 @@ class UserService {
 // -------------------------- 示例：定义控制器 --------------------------
 @Controller( '/users' ) // 路由前缀
 class UserController {
-    // 从 DI 容器自动注入 UserService（逻辑不变）
+    // 从 DI 容器自动注入 UserService
     constructor ( private userService: UserService ) {
     }
 
@@ -66,10 +66,6 @@ class UserController {
     // POST /users
     @Post( '/' )
     createUser ( @Body() body: { name: string } ) {
-        // 模拟 token 校验
-        // if (!token) {
-        // 	return { code: 400, message: 'token 不能为空' };
-        // }
         return this.userService.createUser( body );
     }
 }
