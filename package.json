@@ -34,7 +34,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "dev": "npx ts-node tests/index.ts",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "oxlint src/**/*.ts"
   },
