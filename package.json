@@ -13,12 +13,12 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.js",
-      "types": "./dist/types.d.ts"
+      "types": "./dist/index.d.ts"
     }
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/types.d.ts",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/xuuuuya/koa-contorller.git"
