@@ -20,7 +20,7 @@ export interface DependencyItem<T = any> {
 // 路由元数据
 export interface RouteMetadata {
     path: string;
-    method: 'GET' | 'POST' | 'PUT' | 'DELETE';
+    method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
     handlerName: string;
 }
 

@@ -51,6 +51,29 @@ export function Post(path: string): MethodDecorator {
 }
 
 /**
+ * HTTP PUT 装饰器
+ * @param path 路由路径
+ */
+export function Put(path: string): MethodDecorator {
+    return createMethodDecorator('PUT', path);
+}
+
+/**
+ * HTTP DELETE 装饰器
+ * @param path 路由路径
+ */
+export function Delete(path: string): MethodDecorator {
+    return createMethodDecorator('DELETE', path);
+}
+/**
+ * HTTP PATCH 装饰器
+ * @param path 路由路径
+ */
+export function Patch(path: string): MethodDecorator {
+    return createMethodDecorator('PATCH', path);
+}
+
+/**
  * 通用 HTTP 方法装饰器创建函数
  */
 function createMethodDecorator(method: RouteMetadata['method'], path: string): MethodDecorator {
