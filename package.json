@@ -1,7 +1,7 @@
 {
   "name": "koa-contorller",
   "description": "基于 Koa koa/router + TypeScript 原生实现的依赖注入 + 路由参数控制器",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "commonjs",
   "authors": [
     {
