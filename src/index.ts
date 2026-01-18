@@ -1,4 +1,4 @@
-import { Controller, Service, Ctx, Get, Post, Query, Body, Param } from './decorators';
+import { Controller, Service, Ctx, Get, Post, Query, Body, Param, Put, Delete, Patch } from './decorators';
 import { KoaContainerApp } from './app';
 import {
     ConstructorType,
@@ -29,4 +29,4 @@ export {
     paramsControlType
 };
 
-export { KoaContainerApp, Controller, Service, Ctx, Get, Post, Query, Body, Param };
+export { KoaContainerApp, Controller, Service, Ctx, Get, Post, Query, Body, Param, Put, Delete, Patch };
